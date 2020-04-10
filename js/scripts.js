@@ -6,6 +6,19 @@ function Pizza(size, toppings) {
   this.size = size; 
 }
 
+Pizza.prototype.calcPrice = function () {
+  if (this.size === "med") {
+    this.price += 1;
+  }
+  if (this.size === "large") {
+    this.price += 2;
+  }
+  if (this.size === "xl") {
+    this.price += 3;
+  }
+  return this.price
+}
+
 
 
 
@@ -31,6 +44,7 @@ $(document).ready(function () {
     console.log(size);
     var myPizza = new Pizza(size, toppings);
     console.log(myPizza);
-
+    var price = myPizza.calcPrice();
+    console.log(price);
   });
 });
