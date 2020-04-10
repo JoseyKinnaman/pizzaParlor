@@ -1,9 +1,10 @@
 // Back End for Pizza
 
-function Pizza(size, toppings) {
+function Pizza(size, toppings, addTop) {
   this.price = 12;
   this.toppings = toppings;
   this.size = size; 
+  this.addTop = addTop;
 }
 
 Pizza.prototype.calcPrice = function () {
@@ -16,14 +17,27 @@ Pizza.prototype.calcPrice = function () {
   if (this.size === "xl") {
     this.price += 3;
   }
-  return this.price
-}
+  if (this.addTop === "Pineapple") {
+    this.price += 0.50;
+  }
+  if (this.addTop === "Pop Corn") {
+    this.price += 0.50;
+  }
+  if (this.addTop === "Pastrami") {
+    this.price += 0.50;
+  }
+  if (this.addTop === "Pop Rocks") {
+    this.price += 0.50;
+  } else {
+    this.price += 0;
+  }
+  return this.price;
+};
+ 
 
 Pizza.prototype.pieAndSize = function () {
   return this.size + " " + this.toppings + " Pizza "
-  
 }
-
 
 
 // Front End UI
@@ -34,7 +48,9 @@ $(document).ready(function () {
     console.log(toppings);
     var size = $("#size").val();
     console.log(size);
-    var myPizza = new Pizza(size, toppings);
+    var addTop = $("#addTop").val();
+    console.log(addTop);
+    var myPizza = new Pizza(size, toppings, addTop);
     console.log(myPizza);
     var price = myPizza.calcPrice();
     console.log(price);
