@@ -22,3 +22,8 @@ function Pizza(size, toppings) {
 
 
 // Front End UI
+$(document).ready(function () {
+  $("#form").submit(function (event) {
+    event.preventDefault();
+  });
+});
