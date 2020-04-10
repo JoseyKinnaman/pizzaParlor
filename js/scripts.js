@@ -26,8 +26,6 @@ Pizza.prototype.pieAndSize = function () {
 
 
 
-
-
 // Front End UI
 $(document).ready(function () {
   $("#form").submit(function (event) {

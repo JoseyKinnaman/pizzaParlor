@@ -1,3 +1,30 @@
 #order {
   display: none;
+  background-color: rgb(196, 98, 245);
+  margin: 20% 10%;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+body {
+  background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0121/4658/rrrrrrrtiny-pizza_shop_thumb.png");
+}
+
+.box {
+  background-color: rgb(196, 98, 245);
+  margin: 20% 10%;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+button {
+  
+}
+
+label {
+  font-weight: bolder;
+}
+
+select{
+  margin-bottom: 15px;
 }
