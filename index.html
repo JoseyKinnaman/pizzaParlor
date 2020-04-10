@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-  <link rel="stylesheet" href="css/styles.css" type="text.css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
   <script src="js/jquery-3.4.1.js"></script>
   <script src="js/scripts.js"></script>
   <title>Pizza Parlor</title>
@@ -13,9 +13,9 @@
   <div class="container">
     <div>
       <h1>Patty's Pizza</h1>
-      <p>Select a silly simple pizza and a super specific size! We will slap it together for you and you won't believe your eyes! *All pizzas start at $12. Patty's Pizza is not resposnible for poor decision making when it comes to topping selections. </p>
-      <form id="form">
-        <label for="toppings">Pick a Pizza</label>
+      <p>Select a silly simple pizza and a super specific size! We will slap it together in a jiffy and you won't believe your eyes!</p> 
+      <form id="form" class="form-group">
+        <label for="toppings">Pick a Pie</label>
         <select class="form-control" id="toppings">
           <option value="parsley">Parsley Paradise</option>
           <option value="pickle">Pickle Pizazz</option>
@@ -31,6 +31,12 @@
         </select>
         <button type="submit" class="btn btn-dark">Pick your Poison//Process your Price</button>
       </form>
+    </div>
+    <div id="order">
+      <h3>Your pizza pickin' price is... </h3>
+      <Span></Span>
+      <h3>Pop on by and grab it 20 so it stays pipin' hot!</h3>
+      <h6> DISCLAIMER *All pizzas start at $12. Patty's Pizza is not resposnible for poor decision making when it comes to topping selections and cannot be held responsible for any GI related incidences that may occur. </h6>
     </div>
   </div>
 </body>
