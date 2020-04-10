@@ -4,32 +4,42 @@
   margin-top: 0%;
   margin-left: 10%;
   margin-right: 10%;
-  margin-bottom: 20%;
-  padding: 15px;
+  margin-bottom: 5%;
+  padding: 20px;
   border-radius: 20px;
+  text-align: center;
 }
 
 body {
   background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0121/4658/rrrrrrrtiny-pizza_shop_thumb.png");
   font-family: 'Schoolbell', cursive;
-  text-align: center;
 }
 
 h1 {
+  text-align: center;
   font-family: 'Bangers', cursive;
 }
 
 
 .box {
   background-color: rgb(196, 98, 245);
-  margin: 15% 10% 5% 10%;
+  margin: 10% 10% 5% 10%;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.box1{
+  background-color: gold;
   padding: 15px;
+  margin: 15% 10% 5% 10%;
   border-radius: 20px;
 }
 
 button {
   background-color: gold;
   border-radius: 8px;
+  text-align: center;
+  display: flex; justify-content: center;
 }
 button:hover {
   background-color: white;
@@ -43,9 +53,13 @@ button:active {
 
 label {
   font-weight: bolder;
-  margin-left: 15px;
+  margin-left: 5px;
 }
 
 select{
-  margin: 3px;
+  margin: 2px;
+}
+
+footer {
+  text-align: center;
 }
