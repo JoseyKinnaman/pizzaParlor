@@ -19,16 +19,10 @@ Pizza.prototype.calcPrice = function () {
   return this.price
 }
 
-
-
-
-
-
-
-
-
-
-
+Pizza.prototype.pieAndSize = function () {
+  return this.size + " " + this.toppings + " Pizza "
+  
+}
 
 
 
@@ -46,5 +40,7 @@ $(document).ready(function () {
     console.log(myPizza);
     var price = myPizza.calcPrice();
     console.log(price);
+    $("#pizzaTotal").text("You ordered the " + myPizza.pieAndSize () + "and the price is $" + price + "! ");
+    $("#order").show();
   });
 });
