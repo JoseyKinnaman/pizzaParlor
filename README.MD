@@ -17,19 +17,22 @@ https://jozypants.github.io/pizzaParlor/
 
 ## Specs
 
-- The program lets the user select a topping.
-  - Input: select "peperoni"
-  - Output: "peperoni..."
+- User selects a pizza type from a drop down menu.
+  - Input: "Pickle Pizazz"
+  - Output: "Pickle Pizazz"
 
-* The program lets a user select a size. 
+* User selects a pizza size from a drop down menu.
+  - Input: "Simply Small"
+  - Output: "Simply Small"
 
-  - Input: "small"
-  - Output: "small"
+* User selects additional toppings from a drop down menu.  
+  - Input: "Pop Rocks"
+  - Output: "Pop Rocks"
 
-* The program calculates price of pizza based on toppings and size.
+* Application returns pizza choices and calculates price of pizza based on additonal toppings and size.
 
-  - Input: "peperoni" "small"
-  - Output: "$13"
+  - Input: "Pickle Pizazz" "Simply Small" "Pop Rocks"
+  - Output: "You ordered the small Pickle Pizazz      Pizza and the price is $12.5! Additional Toppings: Pop Rocks"
 
 ## Known Bugs
 

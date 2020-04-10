@@ -40,6 +40,7 @@ Pizza.prototype.pieAndSize = function () {
 }
 
 
+
 // Front End UI
 $(document).ready(function () {
   $("#form").submit(function (event) {
@@ -54,7 +55,8 @@ $(document).ready(function () {
     console.log(myPizza);
     var price = myPizza.calcPrice();
     console.log(price);
-    $("#pizzaTotal").text("You ordered the " + myPizza.pieAndSize () + "and the price is $" + price + "! ");
+    $("#pizzaTotal").text("You ordered the " + myPizza.pieAndSize() + "and the price is $" + price + "! " );
+    $("#toppers").text("Additional Toppings: " + myPizza.addTop);
     $("#order").show();
   });
 });
