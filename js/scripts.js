@@ -25,5 +25,12 @@ function Pizza(size, toppings) {
 $(document).ready(function () {
   $("#form").submit(function (event) {
     event.preventDefault();
+    var toppings = $("#toppings").val();
+    console.log(toppings);
+    var size = $("#size").val();
+    console.log(size);
+    var myPizza = new Pizza(size, toppings);
+    console.log(myPizza);
+
   });
 });
